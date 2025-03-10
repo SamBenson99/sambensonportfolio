@@ -18,6 +18,28 @@
             margin-bottom: 30px;
         }
 
+        /* Back button style */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Back button icon */
+        .back-button::before {
+            content: "←"; /* Left arrow */
+            margin-right: 10px;
+        }
+
         /* Container for the video rows */
         .video-container {
             display: flex;
@@ -44,6 +66,9 @@
     </style>
 </head>
 <body>
+
+    <!-- Back button -->
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Home</button>
 
     <h1>Personal 3D Artwork</h1>
 
