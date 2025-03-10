@@ -8,34 +8,6 @@
 </head>
 <body>
 
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <style>
-        /* Style for buttons */
-        .button {
-            background-color: #007bff; /* Blue color */
-            color: white;
-            font-size: 20px;
-            padding: 30px 40px; /* Padding to make it large */
-            border: none;
-            border-radius: 10px; /* Optional: rounded corners */
-            cursor: pointer;
-            width: 200px; /* Make it square-like */
-            height: 200px; /* Make it square */
-            text-align: center;
-            display: inline-block;
-        }
-
-        .button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-    </style>
-</head>
-<body>
 
  <!DOCTYPE html>
 <html lang="en">
@@ -57,28 +29,40 @@
     </div>
   </section>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!-- Button to redirect to the My Showreel page -->
-    <button onclick="window.location.href='my-showreel.html'">Go to My Showreel</button>
+    <h1 style="text-align: center;">My Portfolio</h1>
 
-</body>
-</html>
+    <!-- Grid container for buttons -->
+    <div class="button-grid">
+        <!-- Button 1 -->
+        <a href="my-showreel.html" class="button" id="button1">
+            <span class="button-text">Showreel</span>
+        </a>
 
+        <!-- Button 2 -->
+        <a href="personal-3d-projects.html" class="button" id="button2">
+            <span class="button-text">Personal 3D Projects</span>
+        </a>
 
- <!-- Button that redirects to the "Personal 3D Artwork" page -->
-    <button onclick="window.location.href='personal-3d-artwork.html'">Go to Personal 3D Artwork</button>
+        <!-- Button 3 -->
+        <a href="freelance-projects.html" class="button" id="button3">
+            <span class="button-text">Freelance projects</span>
+        </a>
 
-</body>
-</html>
-
-   <!-- Button that redirects to the "Freelance Projects" page -->
-    <button onclick="window.location.href='freelance-projects.html'">Go to My Freelance Projects</button>
-
-</body>
-</html>
-
- <!-- Button that redirects to the "Personal Projects" page -->
-    <button onclick="window.location.href='personal-projects.html'">Go to My Personal Projects</button>
+        <!-- Button 4 -->
+        <a href="personal-projects.html" class="button" id="button4">
+            <span class="button-text">Personal Video Projects</span>
+        </a>
+    </div>
 
 </body>
 </html>
