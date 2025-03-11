@@ -1,51 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio - Sam Benson</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <title>Home</title>
-</head>
-<body>
-
-    <h1>Welcome to My Website</h1>  
-
-
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="section-bg" style="background-image: url('images/about-bg.jpg');">
-      <h2>About Me</h2>
-      <p>Hello, I'm Sam. I'm a video editor, videographer, and 3D artist. Take a look at my work!</p>
-    </div>
-  </section>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <h1 style="text-align: center;">My Portfolio</h1>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button with Rollover Effect</title>
     <link rel="stylesheet" href="styles.css"> <!-- If you are using an external CSS file -->
     <style>
         /* General body styles */
@@ -53,106 +11,110 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center; /* Center the content horizontally */
-            align-items: center; /* Center the content vertically */
-            height: 100vh; /* Full viewport height */
+            background-color: #2d2d2d; /* Slightly dark grey background */
+            color: white;
         }
 
-        /* Container for the rows of buttons */
+        /* Header style */
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Button container for 1x4 layout */
         .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Center buttons horizontally */
-            gap: 10px;
-            width: 90%; /* Center the buttons with margins on the left and right */
-            max-width: 1200px; /* Optional max width to prevent buttons from stretching too wide */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+            gap: 20px;
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
         }
 
-        /* Styles for each button */
+        /* Button styling */
         .button {
             position: relative;
-            width: 48%; /* Two buttons per row */
-            height: 33.33vh; /* Set button height to 1/3 of the viewport height */
-            padding: 15px 20px;
+            height: 150px; /* Adjust the height of the buttons */
             text-align: center;
             font-size: 18px;
             text-decoration: none;
-            display: block;
-            border: 2px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444;
             border-radius: 8px;
-            background-size: cover;
-            background-position: center;
-            color: white;
+            transition: all 0.3s ease-in-out;
             overflow: hidden;
-            transition: background-image 0.3s ease-in-out;
+            color: white;
+            font-weight: bold;
         }
 
-        /* Hover effect for changing the background image */
+        /* Hover effect for changing background image and text enlargement */
         .button:hover {
             background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/tedst.png');
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.05); /* Slightly enlarge the button */
         }
 
-        /* Text on top of the image */
         .button-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
+            position: relative;
             z-index: 1;
+            transition: all 0.3s ease-in-out;
         }
 
+        .button:hover .button-text {
+            font-size: 22px; /* Slightly enlarge the text on hover */
+        }
+
+        /* Footer (Contact Me section) */
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-  
-    <!-- Grid container for buttons -->
-    <div class="button-grid">
-        <!-- Button 1 -->
-        <a href="my-showreel.html" class="button" id="button1">
-            <span class="button-text">Showreel</span>
-        </a>
+    <!-- Header section -->
+    <header>
+        My Portfolio
+    </header>
 
-        <!-- Button 2 -->
-        <a href="personal-3d-artwork.html" class="button" id="button2">
-            <span class="button-text">Personal 3D Projects</span>
+    <!-- Button container with 1x4 layout -->
+    <div class="button-container">
+        <a href="#showreel" class="button">
+            <span class="button-text">My Showreel</span>
         </a>
-
-        <!-- Button 3 -->
-        <a href="freelance-projects.html" class="button" id="button3">
-            <span class="button-text">Freelance projects</span>
+        <a href="#freelance" class="button">
+            <span class="button-text">Freelance Work</span>
         </a>
-
-        <!-- Button 4 -->
-        <a href="personal-projects.html" class="button" id="button4">
-            <span class="button-text">Personal Video Projects</span>
+        <a href="#3dart" class="button">
+            <span class="button-text">Personal 3D Artwork</span>
+        </a>
+        <a href="#projects" class="button">
+            <span class="button-text">Personal Projects</span>
         </a>
     </div>
 
-</body>
-</html>
-
-
-  <!-- Contact Me Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can reach out to me through the following platforms:</p>
-    <ul class="social-links">
-      <li><a href="https://www.instagram.com/sambensonvideo" target="_blank">Instagram</a></li>
-      <li><a href="https://www.tiktok.com/@blendson" target="_blank">TikTok</a></li>
-      <li><a href="mailto:samuelbenson@hotmail.com">Email Me</a></li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Sam Benson. All rights reserved.</p>
-  </footer>
+    <!-- Footer (Contact Me) -->
+    <footer>
+        <p>Contact me at: <a href="mailto:sambenson99@example.com">sambenson99@example.com</a></p>
+    </footer>
 
 </body>
 </html>
