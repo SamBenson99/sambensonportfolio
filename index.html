@@ -54,12 +54,35 @@
 
         /* Hover effect for changing background image and text enlargement */
         .button:hover {
-            background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/tedst.png');
-            background-size: cover;
-            background-position: center;
             transform: scale(1.05); /* Slightly enlarge the button */
         }
 
+        /* Individual button background images on hover */
+        .button.showreel:hover {
+            background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/showreel.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .button.freelance:hover {
+            background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/freelance.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .button.artwork:hover {
+            background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/3dart.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .button.projects:hover {
+            background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/projects.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Text on top of the image */
         .button-text {
             position: relative;
             z-index: 1;
@@ -81,6 +104,7 @@
             color: #fff;
             text-decoration: none;
             font-size: 18px;
+            margin: 0 10px;
         }
 
         footer a:hover {
@@ -97,23 +121,28 @@
 
     <!-- Button container with 1x4 layout -->
     <div class="button-container">
-        <a href="#showreel" class="button">
+        <a href="my-showreel.html" class="button showreel">
             <span class="button-text">My Showreel</span>
         </a>
-        <a href="#freelance" class="button">
+        <a href="freelance-projects.html" class="button freelance">
             <span class="button-text">Freelance Work</span>
         </a>
-        <a href="#3dart" class="button">
+        <a href="personal-3d-artwork.html" class="button artwork">
             <span class="button-text">Personal 3D Artwork</span>
         </a>
-        <a href="#projects" class="button">
+        <a href="personal-projects.html" class="button projects">
             <span class="button-text">Personal Projects</span>
         </a>
     </div>
 
     <!-- Footer (Contact Me) -->
     <footer>
-        <p>Contact me at: <a href="mailto:sambenson99@example.com">sambenson99@example.com</a></p>
+        <p>Contact me at: <a href="mailto:samuelbenson@hotmail.com">sambenson99@example.com</a></p>
+        <p>
+            Follow me: 
+            <a href="https://www.instagram.com/sambensonvideo" target="_blank">Instagram</a> | 
+            <a href="https://www.tiktok.com/@blendson" target="_blank">TikTok</a>
+        </p>
     </footer>
 
 </body>
