@@ -157,3 +157,14 @@ footer {
   width: 100%;
   bottom: 0;
 }
+@font-face {
+    font-family: 'VCROSD';
+    src: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/assets/fonts/customfont.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/assets/fonts/VCR_OSD_MONO_1.001.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+}
