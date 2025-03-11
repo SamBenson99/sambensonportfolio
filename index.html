@@ -40,7 +40,95 @@
 <body>
 
     <h1 style="text-align: center;">My Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button with Rollover Effect</title>
+    <link rel="stylesheet" href="styles.css"> <!-- If you are using an external CSS file -->
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        /* Container for the rows of buttons */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+
+        /* Styles for each button */
+        .button {
+            position: relative;
+            width: 48%; /* Two buttons per row */
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            overflow: hidden;
+            transition: background-image 0.3s ease-in-out;
+        }
+
+        /* Hover effect for changing the background image */
+        .button:hover {
+            background-image: url('https://raw.githubusercontent.com/sambenson99/sambensonportfolio/main/images/tedst.png');
+        }
+
+        /* Text on top of the image */
+        .button-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Container for multiple rows of buttons -->
+    <div class="button-container">
+        <!-- First Row of Buttons -->
+        <a href="#my-showreel" class="button">
+            <span class="button-text">My Showreel</span>
+        </a>
+        <a href="#my-showreel" class="button">
+            <span class="button-text">My Showreel</span>
+        </a>
+
+        <!-- Second Row of Buttons (you can add more rows as needed) -->
+        <a href="#my-showreel" class="button">
+            <span class="button-text">My Showreel</span>
+        </a>
+        <a href="#my-showreel" class="button">
+            <span class="button-text">My Showreel</span>
+        </a>
+    </div>
+
+</body>
+</html>
+
+  
     <!-- Grid container for buttons -->
     <div class="button-grid">
         <!-- Button 1 -->
