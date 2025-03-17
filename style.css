@@ -26,27 +26,27 @@ h1 {
     max-width: 800px;
     margin: 0 auto; /* Centers the grid horizontally */
 }
-        /* Back button style */
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
+/* Back button style */
+.back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
         }
 
-        /* Back button icon */
-        .back-button::before {
-            content: "←"; /* Left arrow */
-            margin-right: 10px;
-        }
+/* Back button icon */
+.back-button::before {
+        content: "←"; /* Left arrow */
+        margin-right: 10px;
+    }
 
 /* Styling for each button */
 .button {
